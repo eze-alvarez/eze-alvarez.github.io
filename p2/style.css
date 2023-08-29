@@ -1,0 +1,245 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+header{
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+header > .title{
+    color: white;
+    padding-left: 2rem;
+}
+main{
+    height: 93vh;
+
+    background-color: cadetblue;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.rounds-window{
+    top: 7vh;
+    height: 93vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(189, 182, 172);
+    position: absolute;
+    z-index: 50;
+}
+.container-btn-rounds{
+    display: grid;
+    grid-template-columns: repeat(2, 10rem);
+    grid-template-rows: repeat(2, 10rem);
+    gap: 1.5rem;
+}
+.btn-round{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 2fr;
+    border-radius: 15rem;
+}
+
+.btn-round > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+.btn-round > header{
+    background-color: rgb(101, 169, 237);
+    height: 100%;
+    border-radius: 2rem 2rem 0 0;
+}
+.btn-round > header > h2{
+    color: white;
+    font-size: 3rem;
+}
+.btn-round > footer{
+    background-color: rgb(26, 132, 238);
+    border-top: thin solid black    ;
+    border-radius: 0 0 2rem 2rem ;
+}
+
+.namePlayer{
+    margin: 3rem 0 2rem;
+}
+.namePlayer > label {
+    font-size: 2rem;
+}
+.namePlayerInput {
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    width: 10rem;
+  }
+.playerName1
+, .compuName{
+    font-size: 1.8rem;
+    padding-bottom: 0.5rem;
+}
+
+.btn-play{
+    border: medium solid black;
+    width: 10rem;
+    height: 4rem;
+    border-radius: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+.mensajeRoundIncompleto {
+    position: absolute;
+    z-index: 60;
+    top: 10vh;
+    font-size: 2rem;
+    color: blue;
+}  
+
+.sectionGanador {
+    height: 22vh;
+    width: 40vw;
+    position: absolute;
+    z-index: 100;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    top: 35vh;
+    left: 30vw;
+    border-radius: 5rem;
+    padding: 2rem;
+  }
+
+
+
+
+.jugador{
+    display: flex;
+    flex-direction: column;
+    background-color: darkcyan;
+    padding:1rem 2rem;
+}
+.compu{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    background-color: darkcyan;
+    padding:1rem 2rem;
+}
+
+.puntaje
+, .puntaje-compu{
+    display: flex;
+}
+.punto{
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    border: thin solid black;
+}
+.puntoGanado{
+    background-color: greenyellow;
+}
+.puntoPerdido{
+    background-color: red;
+}
+.puntoEmpate{
+    background-color: yellow;
+}
+.sectorImagenPlayLeft{
+    width: 20rem;
+    height: 15rem;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sectorImagenPlayLeft > img
+, .sectorImagenPlayRight > img
+ {
+    width: 100%;
+    height: auto;
+}
+
+.compu-img{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+}
+.sectorImagenPlayRight{
+    width: 20rem;
+    height: 15rem;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.section-btn{
+    bottom: 0;
+    width: 100%;
+    background-color: cadetblue;
+    
+}
+.container-btn{
+    width: 70%;
+    margin: 3rem  auto;
+    display: flex;
+    justify-content: space-between;
+}
+.container-btn > article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-btn > article > h3 {
+    font-size: 1.5rem;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+}
+button>img{
+    width: 90%;
+    height: auto;
+}
+
+@media only screen and (min-width: 1200px){
+    html{
+        font-size: 100%;
+    }
+    .mensajeRoundIncompleto {
+        top: 5vh;
+    }  
+    .containerPlayers{
+        display: flex;
+    }
+    .containerJugador
+    , .containerCompu{
+        width: 50%;
+    }
+    .container-btn > article > h3 {
+        font-size: 2.5rem;
+    }
+
+    .punto {
+        border: medium solid black;
+    }
+}

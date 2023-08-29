@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra Papel Tijera</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h2 class="title">Piedra Papel Tijera</h2>
+    </header>
+
+    <main>
+        <!-- numero de rounds -->
+        <section class="rounds-window">
+            
+            <div class="container-btn-rounds">
+                <button class="btn-round" id="1">
+                    <header>
+                        <h2>1</h2>
+                    </header>
+                    <footer>
+                        <h3>round</h3>
+                    </footer>
+                </button>
+                <button class="btn-round" id="3">
+                    <header>
+                        <h2>3</h2>
+                    </header>
+                    <footer>
+                        <h3>round</h3>
+                    </footer>
+                </button>
+                <button class="btn-round" id="5">
+                    <header>
+                        <h2>5</h2>
+                    </header>
+                    <footer>
+                        <h3>round</h3>
+                    </footer>
+                </button>
+                <button class="btn-round" id="10">
+                    <header>
+                        <h2>10</h2>
+                    </header>
+                    <footer>
+                        <h3>round</h3>
+                    </footer>
+                </button>
+            </div>
+
+            <div class="namePlayer">
+                <label>Ingresa tu nombre:</label>
+                <input class="namePlayerInput" type="text" placeholder="jugador 1" maxlength="10">
+            </div>
+
+            <button class="btn-play">play</button>
+
+            <h2 class="mensajeRoundIncompleto"></h2>
+        </section>
+
+        <section class="ganador">
+            <!-- <h2 class="mensajeGanador">RESULTADO</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum totam sunt et dolor nostrum ullam reiciendis non, ratione asperiores!</p>
+            <h1>ganaste!</h1> -->
+        </section>
+
+    
+        <!-- jugador -->
+        <div class="containerPlayers">
+            <div class="containerJugador">
+                <section class="jugador">
+                    <h3 class="playerName1"></h3>
+                    <div class="puntaje">
+                        
+                    </div>
+                </section>
+                <section>
+                    <div class="sectorImagenPlayLeft"></div>
+                </section>
+            </div>
+            
+    
+            <!-- computadora -->
+            <div class="containerCompu">
+                <section class="compu">
+                    <h3 class="compuName"></h3>
+                    <div class="puntaje-compu">
+        
+                    </div>
+                </section>
+                <section class="compu-img">
+                    <div class="sectorImagenPlayRight"></div>
+                </section>
+            </div>
+        </div>
+        
+       
+        <!-- botones  -->
+        <section class="section-btn">
+            <div class="container-btn">
+                <article>
+                    <button id="piedra" class="piedra buttonsPlay">
+                        <img 
+                            src="./img/piedra-boton.png" alt="piedra-boton" 
+                        >
+                    </button>
+                    <h3>Piedra</h3>
+                </article>
+    
+                <article>
+                    <button id="papel" class="papel buttonsPlay">
+                        <img 
+                            src="/img/papel-boton.png" 
+                            alt="papel-boton"
+                        >
+                    </button>
+                    <h3>Papel</h3>
+                </article>
+    
+                <article>
+                    <button id="tijera" class="tijera buttonsPlay">
+                        <img 
+                            src="./img/tijera-boton.png" alt="tijera-boton"
+                        >
+                    </button>
+                    <h3>Tijera</h3>
+                </article>
+            </div>       
+        </section>
+    </main>
+
+
+    <script src="./index.js"></script>
+</body>
+</html> 
